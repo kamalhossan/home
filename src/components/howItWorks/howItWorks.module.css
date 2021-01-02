@@ -1,0 +1,13 @@
+.iconBox {
+  min-height: 248px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.countNumber {
+  font-size: 28px;
+}
+.serviceImage {
+  width: 80%;
+}

@@ -1,0 +1,13 @@
+.iconBox {
+  min-height: 248px;
+}
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.countNumber {
+  font-size: 28px;
+}
+.topImage {
+  max-width: 100%;
+}

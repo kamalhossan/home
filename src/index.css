@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* .svg-inline--fa {
+  height: auto;
+  margin: 10px;
+} */
+.shadow-sm.p-3.mb-5.bg-white.rounded {
+  min-height: 248px;
+}
+.shadow-sm.p-3.mb-5.bg-white.rounded:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s;
+}

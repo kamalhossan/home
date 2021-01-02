@@ -1,0 +1,29 @@
+.promotion {
+  margin: 25px 0px;
+}
+.promotion_container {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.promotion_text {
+  font-size: 18px;
+  padding: 15px 0px;
+  font-weight: 600;
+  animation: promotion 40s linear infinite;
+  color: #a65341;
+  min-width: 740px;
+}
+.promotionBox {
+  align-items: center;
+}
+@keyframes promotion {
+  0% {
+    transform: translateX(135%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

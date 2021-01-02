@@ -1,0 +1,9 @@
+.banner {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 360px;
+}
+/* .banner img {
+  max-height: 360px;
+  margin: auto;
+} */
