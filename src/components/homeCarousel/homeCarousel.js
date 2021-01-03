@@ -1,11 +1,12 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import data from './data';
 import classes from './homeCarousel.module.css';
 
 const singleProduct = data.map((productDetails) => (
-    <div className="col-md-12 col-lg-12 col-sm-12 my-2">
+    <Col className="my-2">
         <div className={classes.prodcuts_container}>
             <div className={classes.products_top_image}>
                 <img
@@ -28,7 +29,7 @@ const singleProduct = data.map((productDetails) => (
                 </button>
             </div>
         </div>
-    </div>
+    </Col>
 ));
 
 const responsive = {
@@ -50,29 +51,27 @@ const responsive = {
 };
 
 const homeCarousel = (props) => (
-    <div className="container">
-        <Carousel
-            arrows
-            showDots={false}
-            swipeable
-            draggable
-            responsive={responsive}
-            ssr // means to render carousel on server-side.
-            infinite
-            autoPlay={props.deviceType !== 'mobile'}
-            autoPlaySpeed={1500}
-            keyBoardControl
-            customTransition="all .5"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={[]}
-            deviceType={props.deviceType}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
-        >
-            {singleProduct}
-        </Carousel>
-    </div>
+    <Carousel
+        arrows
+        showDots={false}
+        swipeable
+        draggable
+        responsive={responsive}
+        ssr // means to render carousel on server-side.
+        infinite
+        autoPlay={props.deviceType !== 'mobile'}
+        autoPlaySpeed={1500}
+        keyBoardControl
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={[]}
+        deviceType={props.deviceType}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+    >
+        {singleProduct}
+    </Carousel>
 );
 
 export default homeCarousel;

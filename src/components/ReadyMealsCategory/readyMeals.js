@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container, Row } from 'react-bootstrap';
 import data from './data';
 import classes from './readyMeals.module.css';
 
 const singleCategory = data.map((packs) => (
-    <div className="col-md-3 col-sm-4 my-2">
+    <div className="col-md-3 col-sm-4 my-2 text-center">
         <div className={classes.category_container}>
             <div className={classes.category_top_image}>
                 <img className={classes.category_image} src={packs.image} alt={packs.comboTitle} />
@@ -22,15 +23,15 @@ const singleCategory = data.map((packs) => (
 
 const readyMeals = () => (
     <div className={classes.category_page}>
-        <div className="container py-5">
-            <div className="row">
+        <Container className="py-5">
+            <Row>
                 <div className="col-12">
                     <h1 className={classes.category_name}>Ready Meals Category</h1>
                     <h2 className={classes.all_category}>Test Your Favour</h2>
                 </div>
                 {singleCategory}
-            </div>
-        </div>
+            </Row>
+        </Container>
     </div>
 );
 

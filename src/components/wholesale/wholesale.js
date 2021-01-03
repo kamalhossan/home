@@ -3,7 +3,7 @@ import data from './data';
 import classes from './wholesale.module.css';
 
 const zones = data.map((items) => (
-    <div className="col-md-3 col-sm-4 my-2">
+    <div className="col-md-3 col-sm-4 my-2 text-center">
         <div className={classes.category_container}>
             <div className={classes.category_top_image}>
                 <img className={classes.category_image} src={items.image} alt={items.comboTitle} />

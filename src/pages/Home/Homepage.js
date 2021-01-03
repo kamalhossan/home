@@ -1,36 +1,28 @@
 import React from 'react';
 import Banner from '../../components/banner/banner';
-import HeadingMenu from '../../components/header/headerMenu/headerMenu';
-import TopBar from '../../components/header/topbar/topbar';
-import Carousal from '../../components/homeCarousel/homeCarousel';
+import GlobalFooter from '../../components/global/globalFooter';
+import GlobalHeader from '../../components/global/globalHeader';
+import PopularProducts from '../../components/homeCarousel/popularProducts/popularProducts';
+import ReadyMeals from '../../components/homeCarousel/readyMeals/readyMeals';
+import WholesaleProducts from '../../components/homeCarousel/wholesaleProducts/wholesaleProducts';
 import HowToWork from '../../components/howItWorks/howItWorks';
 import Promotion from '../../components/promotion/promotion';
 import Review from '../../components/review/review';
+import classes from './homepage.module.css';
 
 const Homepage = () => (
-    <div>
-        <TopBar />
-        <HeadingMenu />
-        <div className="promotion">
+    <>
+        <GlobalHeader />
+        <div className={classes.bodyBg}>
             <Promotion />
-        </div>
-        <div className="banner">
             <Banner />
+            <PopularProducts />
+            <WholesaleProducts />
+            <ReadyMeals />
+            <Review />
+            <HowToWork />
         </div>
-        <div className="popular_products">
-            <h2 className="my-3">Most Popular Products</h2>
-            <Carousal />
-        </div>
-        <div className="wholesale_products">
-            <h2 className="my-3">Wholesale Products</h2>
-            <Carousal />
-        </div>
-        <div className="readymade_products">
-            <h2 className="my-3">Most Popular Homepage Ready Meals</h2>
-            <Carousal />
-        </div>
-        <Review />
-        <HowToWork />
-    </div>
+        <GlobalFooter />
+    </>
 );
 export default Homepage;

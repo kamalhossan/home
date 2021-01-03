@@ -1,6 +1,6 @@
 import React from 'react';
+import Amount from './amount/amount';
 import classes from './cart.module.css';
-import Checkout from './checkOut/checkOut';
 import Handbag from './handbag/handbag';
 
 const cart = () => (
@@ -8,7 +8,7 @@ const cart = () => (
         <div className="container">
             <div className="row my-5">
                 <Handbag />
-                <Checkout />
+                <Amount />
             </div>
         </div>
     </div>

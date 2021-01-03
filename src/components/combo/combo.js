@@ -14,7 +14,9 @@ const singleCategory = data.map((packs) => (
                 </div>
             </div>
             <div className="products_content py-3">
-                <h4 className={classes.category_title}>{packs.comboTitle}</h4>
+                <h4 className={['text-center', classes.category_title].join(' ')}>
+                    {packs.comboTitle}
+                </h4>
             </div>
         </div>
     </div>
@@ -25,8 +27,10 @@ const combo = () => (
         <div className="container py-5">
             <div className="row">
                 <div className="col-12">
-                    <h1 className={classes.category_name}>Combo Offer</h1>
-                    <h2 className={classes.all_category}>Best Deals</h2>
+                    <h1 className={['text-center', classes.category_name].join(' ')}>
+                        Combo Offer
+                    </h1>
+                    <h2 className={['text-center', classes.all_category].join(' ')}>Best Deals</h2>
                 </div>
                 {singleCategory}
             </div>
