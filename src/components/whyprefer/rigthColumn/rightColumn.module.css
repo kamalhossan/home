@@ -1,0 +1,28 @@
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #a65341;
+}
+.desc {
+  font-size: 14px;
+  text-align: left;
+  color: #212529;
+}
+.icon_box {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.icon_content {
+  width: 84%;
+}
+.icon_image {
+  width: 14%;
+}
+.icons {
+  min-width: 40px;
+  min-height: 40px;
+  width: 80%;
+  margin: auto;
+}
