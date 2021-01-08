@@ -1,14 +1,13 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Carousel from '../homeCarousel';
-import classes from './wholesaleProducts.module.css';
 
 const wholesaleProducts = () => (
     <div className="py-3">
-        <div className={classes.textHeadingBg}>
-            <h2 className={classes.categoryTitle}>Wholesale Products</h2>
+        <div className="textHeadingBg">
+            <h2 className="categoryTitle">Wholesale Products</h2>
         </div>
-        <Container className="p-0">
+        <Container className="p-0 mt-2">
             <Carousel />
         </Container>
     </div>

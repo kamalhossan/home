@@ -8,6 +8,9 @@ import WholesaleProducts from '../../components/homeCarousel/wholesaleProducts/w
 import HowToWork from '../../components/howItWorks/howItWorks';
 import Promotion from '../../components/promotion/promotion';
 import Review from '../../components/review/review';
+import Serious from '../../components/serious/serious';
+import Testimonials from '../../components/testimonials/testimonials';
+import WhyPrefer from '../../components/whyprefer/whyprefer';
 import classes from './homepage.module.css';
 
 const Homepage = () => (
@@ -16,11 +19,14 @@ const Homepage = () => (
         <div className={classes.bodyBg}>
             <Promotion />
             <Banner />
+            <Serious />
             <PopularProducts />
             <WholesaleProducts />
             <ReadyMeals />
             <Review />
             <HowToWork />
+            <WhyPrefer />
+            <Testimonials />
         </div>
         <GlobalFooter />
     </>

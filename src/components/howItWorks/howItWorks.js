@@ -1,24 +1,24 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import data from './data';
 import classes from './howItWorks.module.css';
 
-const items = data.map((rv) => (
-    <Col>
-        <div className="shadow-sm p-3 mb-5 bg-white rounded text-center">
-            <img className={classes.serviceImage} src={rv.image} alt={rv.clientName} />
-            <h4 className={classes.title}>{rv.clientName}</h4>
-            <p>{rv.desc}</p>
-        </div>
-    </Col>
-));
-
 const howItWorks = () => (
-    <Container className="pb-5">
-        <Row lg={3} md={3} sm={2} xs={2}>
-            {items}
-        </Row>
-    </Container>
+    <div className={classes.bgwhite}>
+        <div className="textHeadingBg">
+            <h2 className="categoryTitle">How it Works?</h2>
+        </div>
+        <Container className="py-5">
+            <Row lg={1} md={1} sm={1} xs={1}>
+                <Col>
+                    <img
+                        className={classes.worksflow}
+                        src="https://www.elitemcommerce.com/wp-content/uploads/sites/3/2019/08/how-it-works-new.jpg"
+                        alt="how it works"
+                    />
+                </Col>
+            </Row>
+        </Container>
+    </div>
 );
 
 export default howItWorks;

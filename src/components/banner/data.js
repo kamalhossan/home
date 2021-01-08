@@ -1,12 +1,11 @@
 export default [
     {
-        image: 'https://static.freshtohome.com/media/banner/happy-10_web.jpg',
+        image: 'https://d2407na1z3fc0t.cloudfront.net/Slider/banner_5fe05cf587f37',
     },
     {
-        image: 'https://static.freshtohome.com/media/banner/good-fish-comes-in-small-boat-web.jpg',
+        image: 'https://d2407na1z3fc0t.cloudfront.net/Slider/banner_5fcf70f648d50',
     },
     {
-        image:
-            'https://static.freshtohome.com/media/banner/raise-better-chicken-with-farmers-web.jpg',
+        image: 'https://d2407na1z3fc0t.cloudfront.net/Slider/banner_5fcf7e79be352',
     },
 ];

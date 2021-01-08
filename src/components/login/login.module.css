@@ -3,3 +3,13 @@
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
+.account_signup {
+  text-align: center;
+  font-size: 14px;
+}
+.account_signup a {
+  color: #000;
+}
+.btn_submit {
+  margin-top: 10px;
+}

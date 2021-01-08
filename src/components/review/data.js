@@ -29,4 +29,9 @@ export default [
         clientNumber: 2384,
         clientName: 'Our Service Point',
     },
+    {
+        image: 'https://www.flaticon.com/svg/static/icons/svg/2883/2883885.svg',
+        clientNumber: 2384,
+        clientName: 'Our Service Point',
+    },
 ];

@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './header/Header';
-import Topbar from './topbar/topbar';
+import CategoryMenu from './category/categoryMenu';
+import Header from './header/header';
 
 const globalHeader = () => (
     <div>
-        <Topbar />
         <Header />
+        <CategoryMenu />
     </div>
 );
 

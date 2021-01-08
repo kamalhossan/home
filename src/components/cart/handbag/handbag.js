@@ -4,6 +4,8 @@ import React from 'react';
 import data from '../data';
 import classes from './handbag.module.css';
 
+const cartsItems = 1;
+
 const singleCart = data.map((singleItems) => (
     <div className="row my-3">
         <div className="col-md-5 col-lg-3 col-xl-3">
@@ -29,8 +31,11 @@ const singleCart = data.map((singleItems) => (
 
                         <input
                             className={['form-control', classes.asText].join(' ')}
-                            type="number"
+                            type="text"
                             name="quantity"
+                            value={cartsItems}
+                            min="1"
+                            max="100"
                         />
 
                         <FontAwesomeIcon className={classes.faIcons} icon={faPlus} />

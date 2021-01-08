@@ -17,7 +17,9 @@
   display: flex;
   border: 1px solid #cacaca;
   border-radius: 5px;
+  align-items: center;
 }
+
 .input_group {
   margin-left: auto;
 }
@@ -26,6 +28,7 @@
 }
 .faIcons {
   cursor: pointer;
+  margin: 0px 5px;
 }
 .inputIcons {
   width: 25px;
@@ -37,6 +40,10 @@
 }
 .cart_alert {
   align-items: center;
+}
+
+.cart_alert svg {
+  margin-right: 10px;
 }
 .cart_alert p {
   display: flex;
@@ -55,9 +62,14 @@
 .product_action_btn {
   display: flex;
   align-items: center;
+  margin-right: 10px;
+}
+.product_action_btn svg {
+  margin-right: 10px;
 }
 .asText {
   appearance: textfield;
+  max-width: 40px;
 }
 .imageRadius {
   border-radius: 15px;

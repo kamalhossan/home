@@ -1,5 +1,5 @@
 .footer_area {
-  background: #fbfbfd;
+  background: #281e15;
 }
 .footer-logo {
   max-height: 150px;
@@ -24,11 +24,14 @@ a:hover {
 a:focus {
   outline: 0;
 }
-.footer-area p {
+.footer_area li {
   font-size: 14px;
   color: #fff;
   font-weight: 300;
   text-align: left;
+}
+.fiiter_area li:hover {
+  color: #f26f00;
 }
 .footer-area h4 {
   font-family: Poppins, sans-serif;
@@ -147,4 +150,72 @@ a {
   .footer-menu {
     padding-left: 0;
   }
+}
+.social_profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 150px;
+  width: 100%;
+  cursor: pointer;
+}
+.social_profiles img {
+  max-width: 40px;
+}
+.footer_contact_title,
+.footer_social_title,
+.footer_menu_title {
+  text-align: center;
+  font-size: 18px;
+  color: #a65341;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer_menu_title {
+  text-align: left;
+}
+.app {
+  margin: 20px auto;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+.app img {
+  max-width: 50px;
+}
+.location {
+  margin: 20px 0;
+  text-align: center;
+}
+.location h4,
+.app h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.location p {
+  font-size: 14px;
+}
+.footer_area li {
+  margin-bottom: 5px;
+}
+.footer_row {
+  flex-direction: row;
+}
+@media (max-width: 680px) {
+  .footer_row :nth-child(1) {
+    order: 1;
+  }
+  .footer_row :nth-child(3) {
+    order: 2;
+  }
+  .btn_block {
+    display: block !important;
+    width: 100% !important;
+  }
+  .footer_widget_contact {
+    margin-bottom: 20px;
+  }
+}
+.footer_widget_menu li:hover {
+  color: #a65341;
 }

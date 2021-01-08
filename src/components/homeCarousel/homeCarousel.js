@@ -6,7 +6,7 @@ import data from './data';
 import classes from './homeCarousel.module.css';
 
 const singleProduct = data.map((productDetails) => (
-    <Col className="my-2">
+    <Col className={['my-2', classes.carouselcol]}>
         <div className={classes.prodcuts_container}>
             <div className={classes.products_top_image}>
                 <img
@@ -24,9 +24,9 @@ const singleProduct = data.map((productDetails) => (
                 <p className={classes.product_brands}>{productDetails.brands}</p>
                 <h4 className={classes.products_title}>{productDetails.title}</h4>
                 <p className={classes.product_Price}>{productDetails.price}</p>
-                <button className={classes.products_btn} type="button">
+                <a href="#productURL" className={classes.products_btn}>
                     {productDetails.btn}
-                </button>
+                </a>
             </div>
         </div>
     </Col>
@@ -36,7 +36,7 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 4,
-        slidesToSlide: 1, // optional, default to 1.
+        slidesToSlide: 2, // optional, default to 1.
     },
     tablet: {
         breakpoint: { max: 1024, min: 778 },
@@ -52,18 +52,19 @@ const responsive = {
 
 const homeCarousel = (props) => (
     <Carousel
+        className={classes.position}
         arrows
         showDots={false}
         swipeable
         draggable
         responsive={responsive}
         ssr // means to render carousel on server-side.
-        infinite
+        infinite={false}
         autoPlay={props.deviceType !== 'mobile'}
-        autoPlaySpeed={1500}
+        autoPlaySpeed={5000}
         keyBoardControl
         customTransition="all .5"
-        transitionDuration={500}
+        transitionDuration={1500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={[]}
         deviceType={props.deviceType}

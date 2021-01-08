@@ -52,12 +52,14 @@
   border-radius: 10px;
   color: #fff;
   outline: none;
-  background: #a65341;
+  background: #f26f00;
   border: 0;
   padding: 5px 10px;
 }
 .product_brands {
   font-size: 12px;
+  color: #a65341;
+  font-weight: 600;
 }
 .products_title {
   font-size: 16px;
@@ -68,9 +70,22 @@
 .products_btn {
   font-size: 14px;
   border-radius: 10px;
-  background-color: #a65341;
+  background: #f26f00;
   color: #fff;
   outline: none;
   border: 0;
   padding: 5px 10px;
+}
+.products_btn:hover {
+  background: #1a1823 !important;
+  color: #fff;
+}
+.position {
+  position: inherit;
+}
+
+@media (max-width: 990px) and (min-width: 540px) {
+  .carouselcol.col {
+    padding: 7px !important;
+  }
 }

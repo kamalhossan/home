@@ -11,6 +11,7 @@ import OfferPage from '../pages/OfferPage/offerPage';
 import partnerpage from '../pages/partner/partnerpage';
 import productsPage from '../pages/Products/productsPage';
 import ReadyMealsPage from '../pages/ReadyMealsCategory/readyMealsPage';
+import signupPage from '../pages/signup/signupPage';
 import WholesalePage from '../pages/WholeSale/WholeSalePage';
 
 const router = () => (
@@ -28,6 +29,7 @@ const router = () => (
             <Route exact path="/partner" component={partnerpage} />
             <Route exact path="/cart" component={cartpage} />{' '}
             <Route exact path="/checkout" component={checkoutpage} />
+            <Route exact path="/signup" component={signupPage} />
         </Switch>
     </>
 );

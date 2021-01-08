@@ -1,10 +1,11 @@
 .promotion {
-  margin: 10px 0px;
+  /* margin: 10px 0px; */
+  padding-top: 5px;
 }
 .promotion_container {
+  padding: 10px 0px;
   overflow: hidden;
-  background: #fff;
-  border-radius: 0px 0px 15px 15px;
+  background: #213852;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
@@ -12,8 +13,8 @@
   font-size: 18px;
   padding: 15px 0px;
   font-weight: 600;
-  animation: promotion 40s linear infinite;
-  color: #a65341;
+  animation: promotion 30s linear infinite;
+  color: #fff;
   min-width: 740px;
 }
 .promotionBox {

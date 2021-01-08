@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './login.module.css';
 
 const login = () => (
@@ -38,10 +39,19 @@ const login = () => (
                             Remember Me
                         </p>
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button
+                        type="submit"
+                        className={['btn btn-primary', classes.btn_submit].join(' ')}
+                    >
                         Submit
                     </button>
                 </form>
+                <h2 className={classes.account_signup}>
+                    Dont have an account?{' '}
+                    <Link to="/signup">
+                        <strong>Signup</strong>
+                    </Link>
+                </h2>
             </div>
         </div>
     </div>
