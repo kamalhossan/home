@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './partner.module.css';
 
 const partner = () => (
@@ -126,6 +127,12 @@ const partner = () => (
                         Submit
                     </button>
                 </form>
+                <h2 className={classes.account_signup}>
+                    Signup as a Customer?{' '}
+                    <Link to="/signup">
+                        <strong>Signup</strong>
+                    </Link>
+                </h2>
             </div>
         </div>
     </div>

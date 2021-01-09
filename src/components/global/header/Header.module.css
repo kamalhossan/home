@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   background: #05574a;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .mainheader a,
 .mainheader a:visited {
@@ -15,7 +15,6 @@
 .left {
   width: 100px;
 }
-
 .logo {
   max-width: 100px;
 }

@@ -6,3 +6,13 @@
 .title {
   font-size: 24px;
 }
+.account_signup {
+  text-align: center;
+  font-size: 14px;
+}
+.account_signup a {
+  color: #000;
+}
+.btn_submit {
+  margin-top: 10px;
+}

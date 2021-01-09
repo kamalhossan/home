@@ -63,7 +63,7 @@ const signup = () => (
                 </form>
                 <h2 className={classes.account_signup}>
                     Signup as a Vendor?{' '}
-                    <Link to="/signup">
+                    <Link to="/partner">
                         <strong>Signup</strong>
                     </Link>
                 </h2>
