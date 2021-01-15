@@ -1,0 +1,21 @@
+.btn_group {
+  display: flex;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.input_group {
+  margin: auto;
+  max-width: 50%;
+}
+.input_group input[type="number"] {
+  max-width: 3rem;
+}
+.faIcons {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+.product_details {
+  align-items: center;
+}

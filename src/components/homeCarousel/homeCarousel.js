@@ -6,7 +6,7 @@ import data from './data';
 import classes from './homeCarousel.module.css';
 
 const singleProduct = data.map((productDetails) => (
-    <Col className={['my-2', classes.carouselcol]}>
+    <Col className={['my-2 p-1', classes.carouselcol]}>
         <div className={classes.prodcuts_container}>
             <div className={classes.products_top_image}>
                 <img
